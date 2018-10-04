@@ -1,0 +1,544 @@
+@font-face {
+    font-family: "cinzelDecorativeBlack";
+    src: url("../polices/CinzelDecorative-Black.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h3 {
+    font-family: "Cinzel Decorative", cursive, serif;
+    margin: 0;
+}
+
+h2 {
+    font-family: "cinzelDecorativeBlack", cursive, serif;
+    margin: 0;   
+}
+
+h4, h5, h6 {
+    font-family: "Amiri", cursive, serif;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+[class*="col"] {
+    padding: 0;
+}
+
+a:hover, a:focus, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    width: 20%;
+    font-family: "Amiri", cursive, serif;
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(64, 68, 41);
+    background-color: rgb(39, 42, 24);
+    color: white;
+}
+
+button:hover {   
+    background-color: rgb(64, 68, 41);
+    transition: all 0.3s ease-in 0s;
+}
+
+button:focus {
+    outline: 0 none;
+}
+
+/* HEADER */
+
+#header {
+    background-color: #1a1c0f;
+}
+
+#header_background {
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    z-index: 2;
+}
+
+#header_background_overlay {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    z-index: 3;
+}
+
+#header_logo {
+    position: relative;
+    width: 10%;
+    max-width: 153px;
+    margin-left: 45.5%;
+    margin-top: 5%;
+}
+
+#header_text {
+    position: absolute;
+    width: 100%;
+    margin-top: 7%;
+    z-index: 4;
+    
+}
+
+header h2, header h3, header h5, header h6, header .glyphicon {
+    text-align: center;
+}
+
+header h1, header h2, header h3 {
+    color: white;
+}
+
+header h2:before, #header h2:after {
+     content: "";
+     display: inline-block;
+     vertical-align: middle;
+     position: relative;
+     background: rgb(205, 179, 120);
+}
+
+header h3 {
+    margin-top: 0.7%;
+}
+
+header h5 {
+    font-style: italic;
+    color: rgb(205, 179, 120);  
+    margin-top: 1.2%;
+}
+
+header h6 {
+    font-style: italic;
+    color: rgb(205, 179, 120);
+    margin-top: 12%;
+}
+
+header .glyphicon {
+    font-weight: 100;
+    color: rgb(205, 179, 120);
+    display: block;
+    margin-top: 0.1%;
+}
+
+/* MAIN */
+
+#main_background {
+    position: absolute;
+    width: 100%;
+}
+
+/* ZEUS */
+
+#zeus {
+    position: absolute;
+    width:20%;
+    margin-left: 65%;
+    margin-top: 4%;
+    z-index: 7;
+}
+
+/* PRESENTATION */
+
+#presentation_text {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+#presentation_text h1 {
+    color: white;
+    padding-top: 8%;
+}
+
+#presentation_text h4 {
+    color: rgb(205, 179, 120);
+    padding-top: 1%;
+}
+
+#presentation_img {
+    position: absolute;
+    width:100%;
+    z-index: 1;
+}
+
+/* DESCRIPTION */
+
+#description {
+    position: relative;
+    z-index: 5;
+}
+
+#description_text {
+    position: absolute;
+    padding-right: 6%;
+    padding-left: 6%;
+    z-index: 6;
+}
+
+#description_text h1 {
+     position: relative;
+     color: rgb(205, 179, 120);
+     padding-top: 12%;
+}
+
+#description_text h4 {   
+    position: relative;
+    color: rgb(180, 186, 152);
+    padding-top: 2%;
+}
+
+#description_text button {   
+    position: relative;
+    margin-top: 4%;
+}
+
+#description_img {
+    position: relative;
+    width:88%;
+    box-shadow: 0px 0px 155px 0px rgba(0, 0, 0, 0.65);
+    margin-top: 5%;
+}
+
+/* PHOTO */
+
+#photo {
+    position: relative;
+    z-index: 6;
+}
+
+#photo-img {
+    position: absolute;
+    width: 100%;
+}
+
+#photo h2 {
+    position: relative; 
+    color: black;
+    margin-left: 63%;
+    padding-top: 15%;
+}
+
+/* SECTION 4 */
+
+#quality {
+    position: relative;
+    margin-top: 15%;
+}
+
+#quality h1 {
+    font-family: "cinzelDecorativeBlack", cursive, serif;
+    font-weight: bold;
+    color: rgb(205, 179, 120);
+    margin-top: 25%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#quality h4 {
+    color: rgb(180, 186, 152);
+    line-height: 150%;
+    margin-top: 8%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#quality_img {
+    position: relative;
+    width: 100%;
+    z-index: 7;
+}
+
+/* ORDER */
+
+#order {
+    position: relative;
+    text-align: center;
+    margin-top: 8%;
+}
+
+#order h1 {
+    color: rgb(205, 179, 120);
+}
+
+#order h4 {
+    color: rgb(180, 186, 152);
+    margin-top: 2%;
+}
+
+#order button {
+    margin-top: 4%;
+}
+
+@media all and (min-width: 1300px){
+    
+    h1 {  
+        font-size: 60px;
+    } 
+   
+    h2 {
+        font-size: 50px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+
+    #description a, #order a {
+        font-size: 16px;
+    }
+    
+    #description button, #order button {   
+        padding: 1%;
+    }
+
+    header h2 {
+        font-size: 50px;
+    }
+    
+    header h2:before, #header h2:after {
+        width: 242px;
+        height: 4px;
+    }
+    
+    header h2:before {
+        margin-right: 20px;
+    }
+  
+    header h2:after {
+        margin-left: 20px;
+    }
+        
+    header h3 {
+        font-size: 30px;
+    }
+    
+    header h5 {
+        font-size: 20px;
+    }
+    
+    header h6 {
+        font-size: 13px;
+    }
+    
+    header .glyphicon {
+        font-size: 16px;
+    }      
+}
+
+@media all and (min-width: 800px) and (max-width: 1300px) {
+
+    
+    header h2 {
+        font-size: 39px;
+    }
+    
+    header h2:before, #header h2:after {
+        width: 120px;
+        height: 3px;
+    }
+    
+    header h2:before {
+        margin-right: 15px;
+    }   
+  
+    header h2:after {
+        margin-left: 15px;
+    }
+    
+    header h3 {
+        font-size: 23px;
+    }
+    
+    header h5 {
+        font-size: 16px;
+    }
+    
+    header h6 {
+        font-size: 10px;
+    }
+    
+    header .glyphicon {
+        font-size: 8px;
+    }
+
+    
+}
+
+@media all and (min-width: 632px) and (max-width: 800px) {
+  
+        
+    h1 {  
+        font-size: 29px;
+    } 
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h4 {
+        font-size: 10px;
+    }
+    
+    #description a, #order a {
+        font-size: 6px;
+    }
+    
+    #description button, #order button {   
+        padding: 0.5%;
+    }
+    
+    header h2 {
+        font-size: 24px;
+    }
+    
+    header h2:before, #header h2:after {
+        width: 55px;
+        height: 2px;
+    }
+    
+    header h2:before {
+        margin-right: 10px;
+    }   
+  
+    header h2:after {
+        margin-left: 10px;
+    }
+    
+    header h3 {
+        font-size: 14px;
+    }
+    
+    header h5 {
+        font-size: 10px;
+    }
+    
+    header h6 {
+        font-size: 10px;
+    }
+    
+    header .glyphicon {
+        font-size: 4px;
+    }
+}
+
+@media all and (max-width: 632px) {
+  
+        
+    h1 {  
+        font-size: 12px;
+    }
+    
+    h2 {
+        font-size: 19px;
+    }
+    
+    h4 {
+        font-size: 6px;
+    }
+        
+    #description a, #order a {
+        font-size: 4px;
+    }
+    
+        
+    #description button, #order button {   
+        padding: 0.5%;
+    }
+       
+    header h2 {
+        font-size: 19px;
+    }
+    
+    header h2:before, #header h2:after {
+        width: 55px;
+        height: 2px;
+    }
+    
+    header h2:before {
+        margin-right: 10px;
+    }   
+  
+    header h2:after {
+        margin-left: 10px;
+    }
+    
+    header h3 {
+        font-size: 11px;
+    }
+    
+    header h5 {
+        font-size: 8px;
+    }
+    
+    header h6 {
+        font-size: 5px;
+    }
+    
+    header .glyphicon {
+        font-size: 4px;
+    }
+}
+
+@media all and (max-width: 344px) {
+           
+    h2 {
+        font-size: 10px;
+    } 
+    
+    h4 {
+        font-size: 5px;
+    }
+    
+    #description button, #order button {   
+        padding: 0.5%;
+    }
+}
+
+@media all and (min-width: 1010px) and (max-width: 1300px) {
+
+    h1 {  
+        font-size: 47px;
+    }  
+    
+    h4 {
+        font-size: 16px;
+    }   
+    
+    #description a, #order a {
+        font-size: 10px;
+    }
+    
+    #description button, #order button {   
+        padding: 0.8%;
+    }
+}
+
+@media all and (min-width: 800px) and (max-width: 1010px) {
+    
+    h1 {  
+        font-size: 37px;
+    }
+    
+    h4 {
+        font-size: 12px;
+    }
+    
+    #description a, #order a {
+        font-size: 8px;
+    } 
+}
